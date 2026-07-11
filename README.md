@@ -38,7 +38,7 @@ OCT data was acquired as electrical signal in the (H and V channels), . Digital 
 Titanium dioxide (TiO₂) was introduced into the glass substrate to modify its properties:
 
 - **High refractive index** → alters light interaction  
-- Introduces **scattering centers** → affects OCT signal  
+- acts as **scattering agent ** → affects OCT signal  
 - Modifies **internal structure** at micro/nano scale  
 - Improves **mechanical and optical properties**
 - TiO₂ is a very common choice as a scattering agent in OCT phantoms and as calibration reference, for a few specific reasons:
@@ -122,36 +122,50 @@ The following metrics were extracted to compare doped vs. undoped samples:
 
 ### Undoped Glass (Baseline)
 ![Undoped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Microscope_slide/OCT_screen_capture.PNG)
-https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/OCT_Bscan.png
 
 ### TiO₂ Doped Glass
 ![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG)
 
-## MATLAB Postprocessing
-With TiO2 vs Without TiO2
-1. RowA/Raw A-line Signal
+---
+
+## MATLAB Postprocessing 
+With TiO2(Row) vs Without TiO2 (Raw)
+
+## 1. Row / Raw A-line Signal
 
 A single OCT A-line (depth profile) for both polarization channels, H and V, showing the raw interferogram before any processing.
 ![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RowAline.png)
-![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RawAline.png)
-2. Raw B-scan (Unscaled)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RawAline.png)
+
+## 2. Row / Raw B-scan (Unscaled)
 
 The raw B-scan assembled from 500 consecutive A-lines, shown before k-space linearization. The visible curvature is caused by the spectrometer's non-linear wavelength sampling.
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-OCT-Bscan.png)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RawBscan.png)
 
-Show Image
-
-3. Rescaled B-scan (Linear-in-k)
+## 3. Rescaled B-scan (Linear-in-k)
 
 After applying the k-space rescaling table, each A-line is resampled onto a linear-in-wavenumber grid — a required correction before the FFT step.
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RescaledBscan.png)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RescaledBscan.png)
 
-Show Image
+## 4. Reconstructed OCT B-scan
 
-4. Reconstructed OCT B-scan
+The final depth-resolved B-scan after FFT reconstruction, with the near-DC autocorrelation artifact cropped out and converted to a log-magnitude (dB) scale. We could observe less reconstruction with the GelCoat-OCT scan due to the TiO2 dopant acting as optical scaterring agent.
 
-The final depth-resolved B-scan after FFT reconstruction, with the near-DC autocorrelation artifact cropped out and converted to a log-magnitude (dB) scale.
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-OCT_Bscan.png)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/OCT_Bscan.png)
 
-Show Image
-### 3D OCT Reconstruction
-![3D](./results/3d_view.png)
+---
+
+### File.gif
+
+1. Row / Raw B-scan (Unscaled)
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RowBscan_rotation.gif)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RawBscan_rotation.gif)
+3. Rescaled B-scan (Linear-in-k)
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RescaledBscan_rotation.gif)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RescaledBscan_rotation.gif)
+
 
 ---
