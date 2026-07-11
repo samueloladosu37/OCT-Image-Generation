@@ -74,7 +74,7 @@ An **A-scan** is a 1D depth profile of the sample:
 1. Load raw OCT data (CSV files)  
 2. Reshape data into B-scan format  
 3. Apply calibration using scaling table
-   ![Calibration](./results/https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Calibration/Calibration.PNG)  
+   ![Calibration](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Calibration/Calibration.PNG)
 5. Perform signal processing:
    - FFT (frequency domain conversion)
    - Optional filtering / Hilbert transform  
