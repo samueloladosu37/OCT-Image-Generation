@@ -108,10 +108,10 @@ The following metrics are extracted to compare doped vs. undoped samples:
 ## 🖼️ Results
 
 ### Undoped Glass (Baseline)
-![Undoped](./results/undoped.png)
+![Undoped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Microscope_slide/OCT_screen_capture.PNG)
 
 ### TiO₂ Doped Glass
-![Doped]([./results/doped.png](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG))
+![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG))
 
 ### 3D OCT Reconstruction
 ![3D](./results/3d_view.png)
