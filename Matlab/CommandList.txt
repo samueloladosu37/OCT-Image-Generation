@@ -1,0 +1,37 @@
+Data_H = csvread('RawDATA_H.csv');
+plot(Data_H)
+plot(Data_H(1:3800)
+plot(Data_H(1:3800))
+Data_V = csvread('RawDATA_V.csv');
+Data_V = csvread('RowDATA_V.csv');
+hold on
+plot(Data_V(1:3800))
+size(Data_V)
+ans(1)/3800
+B_sc_data = zeros(3800,500);
+for i:1:500
+for i = 1:500
+B_sc_data(:,i) = Data_V(1 + 3800* (i-1): 3800 * i);
+end
+mesh(B_sc_data)
+hold off
+mesh(B_sc_data)
+uiopen('C:\Users\MarS\OneDrive\OCT_DSP_project\Calibration\rescaling_table_1_sample.txt',1)
+scaling
+scaling(1)
+scaling(1,1)
+scaling(1,2)
+ans*2
+size(B_sc_data)
+size(scaling)
+ans * 2
+B_sc_ready = sc_process(B_sc_data, scaling);
+mesh(B_sc_ready)
+B_scan = fftOCT(B_sc_ready);
+mesh(B_scan)
+mesh(B_scan(25:1024, :))
+B_scan = fftOCT(B_sc_ready);
+mesh(B_scan)
+vie(2)
+view(3)
+view(2)
