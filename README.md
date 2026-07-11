@@ -1,10 +1,10 @@
 # Optical Coherence Tomography (OCT) Image Processing of Glass Substrates
 
-## 📌 Project Overview
+## Project Overview
 
 This project presents the digital processing and analysis of Optical Coherence Tomography (OCT) scans performed on glass substrates **with and without TiO₂ gel dopant**.
 
-The objective is to investigate how the dopant modifies the internal structure and optical response of the material using MATLAB-based signal and image processing.
+The objective is to investigate how the dopant modifies the internal structure and optical response of glass using MATLAB-based signal and image processing. TiO₂ is a very common choice as a scattering agent in OCT phantoms and as calibration reference. It's application is useful for building phantoms that mimic the optical scattering properties of biological tissue i.e brain tissue
 
 ---
 
