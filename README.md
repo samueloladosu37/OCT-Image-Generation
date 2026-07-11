@@ -40,7 +40,17 @@ Titanium dioxide (TiO₂) was introduced into the glass substrate to modify its 
 - **High refractive index** → alters light interaction  
 - Introduces **scattering centers** → affects OCT signal  
 - Modifies **internal structure** at micro/nano scale  
-- Improves **mechanical and optical properties**  
+- Improves **mechanical and optical properties**
+- TiO₂ is a very common choice as a scattering agent in OCT phantoms and as calibration reference, for a few specific reasons:
+1. Strong, controllable backscatter
+Because TiO₂ has such a high refractive index (~2.4–2.7) relative to the surrounding matrix (resin, silicone, gelatin, etc. ~1.4–1.5), it scatters light very efficiently. This lets you dial in a known scattering coefficient (μs) by controlling TiO₂ concentration — useful for building phantoms that mimic the optical scattering properties of biological tissue.
+2. Simulating tissue-like optical properties
+Real biological tissue scatters light due to structural variations (cell membranes, organelles, collagen fibers). TiO₂ particles in a phantom stand in for that — giving you a reproducible, tissue-mimicking scattering medium so you can test OCT system performance (axial resolution, sensitivity roll-off, penetration depth) without using actual tissue.
+3. Stability and reproducibility
+Unlike biological samples, TiO₂-doped phantoms don't degrade, dry out, or change scattering properties over time — making them good as long-term calibration standards or references for comparing system performance across measurement sessions.
+4. Particle size tunability
+Different TiO₂ particle sizes (nanometer to micrometer range) let you tune the scattering behavior — smaller particles favor more isotropic (Rayleigh-like) scattering, larger particles behave more like Mie scattering, closer to real tissue structures.
+
 
 👉 The goal is to observe how these changes appear in OCT imaging and signal profiles.
 
@@ -49,8 +59,11 @@ Titanium dioxide (TiO₂) was introduced into the glass substrate to modify its 
 ## 📂 Data Description
 
 - `RawDATA_H.csv` → Horizontal channel OCT signal  
-- `RawDATA_V.csv` → Vertical channel OCT signal  
-- `2D.bmp` → Raw OCT image from system  
+- `RawDATA_V.csv` → Vertical channel OCT signal
+- `RowDATA_H.csv` → Horizontal channel OCT signal with Gelcoat
+- `RowDATA_V.csv` → Vertical channel OCT signal with Gelcoat  
+- `2D.bmp` → Raw OCT image from system
+- Microscope_slide → Raw data without Gelcoat
 - `A_scan_final.csv` → Processed depth signal (A-scan)  
 - `scaling_table.txt` → Calibration data for rescaling  
 
@@ -71,7 +84,7 @@ An **A-scan** is a 1D depth profile of the sample:
 
 ## ⚙️ MATLAB Processing Pipeline
 
-1. Load raw OCT data (CSV files)  
+1. Load row/raw OCT data (CSV files)  
 2. Reshape data into B-scan format  
 3. Apply calibration using scaling table
    ![Calibration](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Calibration/Calibration.PNG)
@@ -87,7 +100,7 @@ An **A-scan** is a 1D depth profile of the sample:
 
 ## 📈 Quantitative Analysis
 
-The following metrics are extracted to compare doped vs. undoped samples:
+The following metrics were extracted to compare doped vs. undoped samples:
 
 - **Signal Intensity Profile**  
   → Peak reflectivity differences  
@@ -101,7 +114,7 @@ The following metrics are extracted to compare doped vs. undoped samples:
 - **Signal-to-Noise Ratio (SNR)**  
   → Measures image quality  
 
-👉 These provide objective insight into how TiO₂ affects the material.
+👉 Results not presented here. These provide quantitative insight into how TiO₂ affects the glass and how its concentration can be used for building phantoms that mimic the optical scattering properties of biological tissue.
 
 ---
 
