@@ -176,7 +176,7 @@ To reduce broadband noise in the raw signal, a low-pass filter was applied to at
 
 As shown below, the filtered spectrogram shows a clear reduction in the speckled, high-frequency noise present throughout the original signal, while the primary low-frequency band — corresponding to the signal's underlying structure — remains intact. This confirms the filter is attenuating unwanted high-frequency noise without discarding the features of interest.
 
-![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/Low Pass Denoising.jpg)
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/Low%20Pass%20Denoising.jpg)
 
 Top: original signal doped-glass spectrogram, showing broadband noise across the full frequency range. Bottom: filtered signal after low-pass filtering, showing suppressed high-frequency noise with the primary low-frequency content preserved.
 
