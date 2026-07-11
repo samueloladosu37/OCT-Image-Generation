@@ -170,13 +170,13 @@ The final depth-resolved B-scan after FFT reconstruction, with the near-DC autoc
 
 ---
 
-Signal Filtering — Low-Pass Denoising on GelCoat-OCTBscan
+## Signal Filtering — Low-Pass Denoising on GelCoat-OCTBscan
 
 To reduce broadband noise in the raw signal, a low-pass filter was applied to attenuate high-frequency noise components while preserving the dominant low-frequency content of the signal.
 
 As shown below, the filtered spectrogram shows a clear reduction in the speckled, high-frequency noise present throughout the original signal, while the primary low-frequency band — corresponding to the signal's underlying structure — remains intact. This confirms the filter is attenuating unwanted high-frequency noise without discarding the features of interest.
-![Low Pass Filter](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/Low Pass Denoising.jpg)
 
+![Without TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/Low Pass Denoising.jpg)
 
 Top: original signal doped-glass spectrogram, showing broadband noise across the full frequency range. Bottom: filtered signal after low-pass filtering, showing suppressed high-frequency noise with the primary low-frequency content preserved.
 
