@@ -73,12 +73,13 @@ An **A-scan** is a 1D depth profile of the sample:
 
 1. Load raw OCT data (CSV files)  
 2. Reshape data into B-scan format  
-3. Apply calibration using scaling table  
-4. Perform signal processing:
+3. Apply calibration using scaling table
+   ![Calibration](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Calibration/Calibration.PNG)
+5. Perform signal processing:
    - FFT (frequency domain conversion)
    - Optional filtering / Hilbert transform  
-5. Extract meaningful depth information  
-6. Visualize results:
+6. Extract meaningful depth information  
+7. Visualize results:
    - 2D OCT image  
    - 3D mesh plot  
 
@@ -107,20 +108,12 @@ The following metrics are extracted to compare doped vs. undoped samples:
 ## 🖼️ Results
 
 ### Undoped Glass (Baseline)
-![Undoped](./results/undoped.png)
+![Undoped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Microscope_slide/OCT_screen_capture.PNG)
 
 ### TiO₂ Doped Glass
-![Doped](./results/doped.png)
+![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG)
 
 ### 3D OCT Reconstruction
 ![3D](./results/3d_view.png)
 
 ---
-
-## 🚀 How to Run
-
-1. Open MATLAB  
-2. Place all data files in the same directory  
-3. Run your main script:
-   ```matlab
-   run('your_script.m')
