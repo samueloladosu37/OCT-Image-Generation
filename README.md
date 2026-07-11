@@ -133,7 +133,7 @@ With TiO2 vs Without TiO2
 
 A single OCT A-line (depth profile) for both polarization channels, H and V, showing the raw interferogram before any processing.
 ![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RowAline.png)
-![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RawAline.png)
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/RawAline.png)
 2. Raw B-scan (Unscaled)
 
 The raw B-scan assembled from 500 consecutive A-lines, shown before k-space linearization. The visible curvature is caused by the spectrometer's non-linear wavelength sampling.
