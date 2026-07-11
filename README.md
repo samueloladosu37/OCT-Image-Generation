@@ -122,10 +122,35 @@ The following metrics were extracted to compare doped vs. undoped samples:
 
 ### Undoped Glass (Baseline)
 ![Undoped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Microscope_slide/OCT_screen_capture.PNG)
+https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/OCT_Bscan.png
 
 ### TiO₂ Doped Glass
 ![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG)
 
+## MATLAB Postprocessing
+With TiO2 vs Without TiO2
+1. RowA/Raw A-line Signal
+
+A single OCT A-line (depth profile) for both polarization channels, H and V, showing the raw interferogram before any processing.
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RowAline.png)
+![With TiO2](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/figures/GelCoat-RawAline.png)
+2. Raw B-scan (Unscaled)
+
+The raw B-scan assembled from 500 consecutive A-lines, shown before k-space linearization. The visible curvature is caused by the spectrometer's non-linear wavelength sampling.
+
+Show Image
+
+3. Rescaled B-scan (Linear-in-k)
+
+After applying the k-space rescaling table, each A-line is resampled onto a linear-in-wavenumber grid — a required correction before the FFT step.
+
+Show Image
+
+4. Reconstructed OCT B-scan
+
+The final depth-resolved B-scan after FFT reconstruction, with the near-DC autocorrelation artifact cropped out and converted to a log-magnitude (dB) scale.
+
+Show Image
 ### 3D OCT Reconstruction
 ![3D](./results/3d_view.png)
 
