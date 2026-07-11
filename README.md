@@ -111,17 +111,9 @@ The following metrics are extracted to compare doped vs. undoped samples:
 ![Undoped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/Microscope_slide/OCT_screen_capture.PNG)
 
 ### TiO₂ Doped Glass
-![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG))
+![Doped](https://github.com/samueloladosu37/OCT-Image-Generation/blob/main/GelCoat/OCT_screen_capture.PNG)
 
 ### 3D OCT Reconstruction
 ![3D](./results/3d_view.png)
 
 ---
-
-## 🚀 How to Run
-
-1. Open MATLAB  
-2. Place all data files in the same directory  
-3. Run your main script:
-   ```matlab
-   run('your_script.m')
