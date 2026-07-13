@@ -38,7 +38,7 @@ OCT data was acquired as electrical signal in the (H and V channels), . Digital 
 Titanium dioxide (TiO₂) was introduced into the glass substrate to modify its properties:
 
 - **High refractive index** → alters light interaction  
-- acts as **scattering agent ** → affects OCT signal  
+- acts as **scattering agent** → affects OCT signal  
 - Modifies **internal structure** at micro/nano scale  
 - Improves **mechanical and optical properties**
 - TiO₂ is a very common choice as a scattering agent in OCT phantoms and as calibration reference, for a few specific reasons:
