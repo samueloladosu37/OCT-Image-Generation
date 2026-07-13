@@ -8,7 +8,7 @@ The objective is to investigate how the dopant modifies the internal structure a
 
 ---
 
-## 🎯 Purpose of OCT in This Project
+## 🎯 Purpose of OCT
 
 Optical Coherence Tomography (OCT) is a non-invasive imaging technique used to obtain high-resolution cross-sectional images.
 
